@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>el5206_example</name>
+  <version>0.0.2</version>
+  <description>
+    Example node for reading odometry , laser and controlling robot. 
+  </description>
+
+  <maintainer email="felipe.inostroza@amtc.uchile.cl">Felipe Inostroza</maintainer>
+  <license>BSD</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>joy</run_depend>
+
+  <export>
+  </export>
+</package>
