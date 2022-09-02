@@ -285,7 +285,6 @@ if __name__ == '__main__':
 
     try:
         # Demo function
-        node.saveLaser()
         node.dance()
 
     except rospy.ROSInterruptException:
