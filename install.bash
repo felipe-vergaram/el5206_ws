@@ -31,11 +31,14 @@ rosdep init
 rosdep update
 
 echo "Install some useful packages used in EL5206"
-sudo apt install -y ros-noetic-turtlebot3-gazebo ros-noetic-turtlebot3-teleop
+sudo apt install -y ros-noetic-turtlebot3-gazebo ros-noetic-turtlebot3-teleop ros-noetic-slam-gmapping ros-noetic-map-server
 
 echo "Build workspace"
 catkin_make
 echo "source ~/el5206_ws/devel/setup.bash" >> ~/.bashrc
 source devel/setup.sh
+
+echo "Exporting some variables"
+echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
 
 echo "Installation ready!"
