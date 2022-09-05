@@ -46,6 +46,9 @@ class EL5206_Robot:
         self.target_yaw = None
         self.path = rospkg.RosPack().get_path('el5206_example')
 
+        # Extra variable to print odometry
+        self.odom_i = 0
+
         # Subscribers
         rospy.Subscriber("/odom",               Odometry,  self.odometryCallback)
         rospy.Subscriber("/ground_truth/state", Odometry,  self.groundTruthCallback)
@@ -82,6 +85,11 @@ class EL5206_Robot:
         to get the (x,y,yaw) coordinates and save the in the self.odom_x, 
         self.odom_y and self.odom_yaw attributes.
         """
+        self.odom_i += 1
+        if self.odom_i%30==0:
+            # Print one every 30 msgs
+            print("This is the Odometry message:")
+            print(msg)
         self.odom_x, self.odom_y, self.odom_yaw = self.odom2Coords(msg)
     
 
