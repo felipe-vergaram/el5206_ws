@@ -253,7 +253,7 @@ class EL5206_Robot:
             time.sleep(1)
 
 
-    def asssignment_1(self):
+    def assignment_1(self):
         # You can use this method to solve the Assignment 1.
         # START: YOUR CODE HERE
 
@@ -261,7 +261,7 @@ class EL5206_Robot:
         pass
 
     
-    def asssignment_2(self):
+    def assignment_2(self):
         # You can use this method to solve the Assignment 2.
         # START: YOUR CODE HERE
 
@@ -269,7 +269,7 @@ class EL5206_Robot:
         pass
 
 
-    def asssignment_3(self):
+    def assignment_3(self):
         # You can use this method to solve the Assignment 3.
         # START: YOUR CODE HERE
 
@@ -277,7 +277,7 @@ class EL5206_Robot:
         pass
 
 
-    def asssignment_4(self):
+    def assignment_4(self):
         # You can use this method to solve the Assignment 4.
         # START: YOUR CODE HERE
 
